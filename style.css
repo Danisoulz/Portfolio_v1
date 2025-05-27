@@ -11,6 +11,7 @@ body {
     color: #fff;
     line-height: 1.6;
 }
+
 .grid-container {
     display: grid;
     gap: 2rem;
@@ -48,6 +49,7 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+
 .logo {
     font-size: 2rem;
     font-weight: bold;
@@ -127,4 +129,31 @@ nav a:hover {
     color: #00ffff;
     margin-right: 1rem;
     text-decoration: none;
+}
+
+.about-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+}
+
+.about-content {
+    flex: 1 1 300px;
+}
+
+.about-image img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.social-links a {
+    color: #fff;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
 }
