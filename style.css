@@ -1,0 +1,130 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: #0a0a0a;
+    color: #fff;
+    line-height: 1.6;
+}
+.grid-container {
+    display: grid;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    position: relative;
+}
+
+.glow {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.3;
+    filter: blur(100px);
+}
+
+.glow-1 {
+    width: 300px;
+    height: 300px;
+    background: #ff00ff;
+    top: 0;
+    left: 0;
+}
+
+.glow-2 {
+    width: 300px;
+    height: 300px;
+    background: #00ffff;
+    bottom: 0;
+    right: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #00ffff;
+}
+
+.hero {
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero .tags {
+    margin-top: 1rem;
+}
+
+.tag {
+    display: inline-block;
+    background: #333;
+    padding: 0.5rem 1rem;
+    margin: 0.2rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background: #1a1a1a;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-info {
+    padding: 1rem;
+}
+
+.project-links a {
+    color: #00ffff;
+    margin-right: 1rem;
+    text-decoration: none;
+}
